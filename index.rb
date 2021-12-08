@@ -29,4 +29,4 @@ def decode_phrase(phrase)
   decoded_phrase
 end
 
-puts(decode_phrase('-- -.--   -. .- -- .'))
+puts(decode_phrase('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'))
