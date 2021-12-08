@@ -20,7 +20,7 @@ def decode_phrase(phrase)
   split_array_phrase = phrase.split('  ')
   decoded_phrase = ''
   split_array_phrase.each_with_index do |word, index|
-    decoded_phrase += if index == split_array_phrase.length
+    decoded_phrase += if index == split_array_phrase.length - 1
                         decode_word(word)
                       else
                         "#{decode_word(word)} "
@@ -29,4 +29,4 @@ def decode_phrase(phrase)
   decoded_phrase
 end
 
-puts(decode_phrase(' .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'))
+puts(decode_phrase('-- -.--   -. .- -- .'))
